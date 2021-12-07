@@ -1,0 +1,11 @@
+name = "cf-social"
+type = "webpack"
+
+account_id = "459d63e307d556a10d3440ec3502242a"
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2021-11-29"
+kv_namespaces = [
+	 { binding = "CF_KV", id = "2e5ad5ee82ab4c5993d27c5ba1fa8bf0", preview_id = "21878d10d8744912b78e812f4719d046" }
+]
