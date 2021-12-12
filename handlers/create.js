@@ -83,8 +83,7 @@ const handler = async request => {
     } else {
       cookie_header = await handleNewUser(post.username)
     }
-    if (cookie_header['set-cookie'])
-      await post.save()
+    await post.save()
     console.log(`success for ${post.username}`)
     return wrapCorsHeader(
       new Response('success', { headers: { ...cookie_header }, status: 201 }),
