@@ -17,8 +17,8 @@ class Post {
         }
     }
 
-    save() {
-        return CF_KV.put(`posts:${this.id}`, JSON.stringify(this))
+    async save() {
+        return await CF_KV.put(`posts:${this.id}`, JSON.stringify(this))
     }
 
     static async findMany(cursor, limit) {
